@@ -1,0 +1,55 @@
+// variables
+
+//breakpoints
+$sm: 544px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// colors
+
+// dark blue
+$primary: hsl(240, 38%, 20%);
+//grayish blue
+$secondary: hsl(240, 18%, 77%);
+
+// fonts
+$font-main: 'Inter', sans-serif;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: $font-main;
+	font-size: 32px;
+}
+
+.container {
+	width: 87%;
+	max-width: 1200px;
+	margin: 25px auto;
+}
+
+.testimonial-slider {
+	&__graphic {
+		background-image: url(../images/pattern-bg.svg);
+	}
+
+	&__photo {
+		width: 78%;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
