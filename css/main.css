@@ -22,6 +22,8 @@ body { box-sizing: border-box; font-family: "Inter", sans-serif; font-size: 19px
 
 .testimonial-slider__status { color: #babacf; }
 
-.attribution { font-size: 11px; text-align: center; }
+.footer { position: relative; padding-top: 80px; background: url(../images/pattern-curve.svg) bottom left/contain no-repeat; }
+
+.attribution { position: relative; font-size: 11px; text-align: center; z-index: 1; }
 
 .attribution a { color: #3e52a3; }
