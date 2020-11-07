@@ -27,7 +27,15 @@ $font-main: 'Inter', sans-serif;
 body {
 	box-sizing: border-box;
 	font-family: $font-main;
-	font-size: 32px;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 26px;
+	text-align: center;
+	color: $primary;
+
+	@media (min-width: $lg) {
+		font-size: 32px;
+	}
 }
 
 .container {
@@ -38,11 +46,53 @@ body {
 
 .testimonial-slider {
 	&__graphic {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 0;
 		background-image: url(../images/pattern-bg.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	&__photo {
-		width: 78%;
+		width: 77.5%;
+		border-radius: 7px;
+	}
+
+	&__text {
+		position: relative;
+		padding-top: 25px;
+	}
+
+	&__quotes-icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 50px;
+		z-index: 1;
+	}
+
+	&__paragraph {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__name,
+	&__status {
+		display: block;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	&__name {
+		font-weight: 700;
+	}
+
+	&__status {
+		color: $secondary;
 	}
 }
 
