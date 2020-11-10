@@ -25,6 +25,7 @@ $font-main: 'Inter', sans-serif;
 }
 
 body {
+	// min-height: 100vh;
 	box-sizing: border-box;
 	font-family: $font-main;
 	font-size: 19px;
@@ -87,7 +88,10 @@ body {
 		padding-top: 25px;
 
 		@media (min-width: $lg) {
+			position: absolute;
+			top: 50%;
 			width: 52%;
+			transform: translateY(-50%);
 		}
 	}
 
@@ -177,9 +181,23 @@ body {
 }
 
 .footer {
-	position: relative;
 	padding-top: 80px;
 	background: url(../images/pattern-curve.svg) bottom left / contain no-repeat;
+
+	@media (min-height: 700px) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+	@media (min-width: $lg) and (min-height: 700px) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		// height: 155px;
+	}
 }
 
 .attribution {

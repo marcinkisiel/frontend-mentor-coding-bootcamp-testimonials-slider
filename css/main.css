@@ -18,7 +18,7 @@ body { box-sizing: border-box; font-family: "Inter", sans-serif; font-size: 19px
 
 .testimonial-slider__text { position: relative; padding-top: 25px; }
 
-@media (min-width: 992px) { .testimonial-slider__text { width: 52%; } }
+@media (min-width: 992px) { .testimonial-slider__text { position: absolute; top: 50%; width: 52%; transform: translateY(-50%); } }
 
 .testimonial-slider__quotes-icon { display: block; position: absolute; top: 0; left: 50%; transform: translateX(-50%); height: 50px; z-index: 1; }
 
@@ -42,7 +42,11 @@ body { box-sizing: border-box; font-family: "Inter", sans-serif; font-size: 19px
 
 @media (min-width: 992px) { .testimonial-slider__button { width: 55px; height: 55px; } }
 
-.footer { position: relative; padding-top: 80px; background: url(../images/pattern-curve.svg) bottom left/contain no-repeat; }
+.footer { padding-top: 80px; background: url(../images/pattern-curve.svg) bottom left/contain no-repeat; }
+
+@media (min-height: 700px) { .footer { position: fixed; left: 0; bottom: 0; width: 100%; } }
+
+@media (min-width: 992px) and (min-height: 700px) { .footer { position: fixed; left: 0; bottom: 0; width: 100%; } }
 
 .attribution { position: relative; font-size: 11px; text-align: center; z-index: 1; }
 
