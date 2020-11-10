@@ -41,7 +41,7 @@ body {
 .container {
 	width: 87%;
 	max-width: 1200px;
-	margin: 25px auto;
+	margin: 25px auto 0;
 }
 
 .testimonial-slider {
@@ -51,6 +51,7 @@ body {
 		align-items: center;
 		position: relative;
 		padding: 30px 0;
+		margin-bottom: 20px;
 		background-image: url(../images/pattern-bg.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -106,6 +107,7 @@ body {
 		height: 40px;
 		border-radius: 50px;
 		background-color: #fff;
+		cursor: pointer;
 		transform: translateX(-50%);
 		z-index: 5;
 	}
@@ -122,6 +124,7 @@ body {
 		background-color: #fff;
 		border: none;
 		border-radius: 50%;
+		cursor: pointer;
 
 		&--prev {
 		}
