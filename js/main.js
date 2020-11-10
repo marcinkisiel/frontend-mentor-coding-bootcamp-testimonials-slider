@@ -5,7 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.testimonial-slider__button--next',
+		prevEl: '.testimonial-slider__button--prev',
 	},
 });

@@ -49,6 +49,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 		padding: 30px 0;
 		background-image: url(../images/pattern-bg.svg);
 		background-size: contain;
@@ -58,6 +59,7 @@ body {
 	&__photo {
 		width: 77.5%;
 		border-radius: 7px;
+		box-shadow: 0px 15px 40px -20px rgba(0, 0, 0, 0.75);
 	}
 
 	&__text {
@@ -94,6 +96,36 @@ body {
 	&__status {
 		color: $secondary;
 	}
+
+	&__switches {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		display: flex;
+		width: 80px;
+		height: 40px;
+		border-radius: 50px;
+		background-color: #fff;
+		transform: translateX(-50%);
+		z-index: 5;
+	}
+
+	&__button-box {
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background-color: #fff;
+		border: none;
+		border-radius: 50%;
+
+		&--prev {
+		}
+	}
 }
 
 .footer {
@@ -110,4 +142,14 @@ body {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+// Swiper classes
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+	content: '';
 }
