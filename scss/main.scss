@@ -52,6 +52,8 @@ body {
 }
 
 .testimonial-slider {
+	overflow: hidden;
+
 	&__slide {
 		@media (min-width: $lg) {
 			height: 520px;
